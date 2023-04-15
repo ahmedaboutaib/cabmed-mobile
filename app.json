@@ -1,9 +1,7 @@
 {
   "expo": {
     "scheme": "acme",
-    "web": {
-      "bundler": "metro"
-    },
+    
     "name": "cabmed-mobile",
     "slug": "cabmed-mobile",
     "extra": {

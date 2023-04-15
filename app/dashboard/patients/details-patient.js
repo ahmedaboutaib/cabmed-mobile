@@ -1,9 +1,10 @@
 import React from 'react';
 import { View, Text, SafeAreaView, StyleSheet } from 'react-native';
 import Constants from 'expo-constants';
+import { useSearchParams } from 'expo-router';
 
-const PatientDetails = ({ route }) => {
-  const { patient } = route.params;
+const PatientDetails = () => {
+  const  patient  = useSearchParams();
 
   return (
     <SafeAreaView style={styles.container}>
@@ -12,6 +13,12 @@ const PatientDetails = ({ route }) => {
         <Text style={styles.text}>{patient.nom}</Text>
         <Text style={styles.label}>Prénom:</Text>
         <Text style={styles.text}>{patient.prenom}</Text>
+        <Text style={styles.label}>Adresse:</Text>
+        <Text style={styles.text}>{patient.adresse}</Text>
+        <Text style={styles.label}>tel:</Text>
+        <Text style={styles.text}>{patient.tel}</Text>
+        <Text style={styles.label}>email:</Text>
+        <Text style={styles.text}>{patient.email}</Text>
       </View>
     </SafeAreaView>
   );

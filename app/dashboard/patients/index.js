@@ -13,13 +13,23 @@ import {
 import { MaterialIcons } from '@expo/vector-icons';
 import axios from 'axios';
 import Constants from 'expo-constants';
-import {Link} from 'expo-router'
+import {Link, useRouter} from 'expo-router'
 
-const Item = ({ patient, navigation }) => (
+const Item = ({ patient, navigation }) => { 
+
+  const router = useRouter();
+
+  return(
   <View style={styles.itemContainer}>
     <Text style={styles.itemTitle}>{`${patient.nom} ${patient.prenom}`}</Text>
-    <TouchableOpacity onPress={() => navigation.navigate('PatientDetails', { patient })}>
+<Link href={{ pathname: './patients/details-patient/', params: patient }} asChild >
+      <Pressable>
+        {({ hovered, pressed }) => (
       <MaterialIcons name="remove-red-eye" size={24} color="black" />
+        )}
+      </Pressable>
+    </Link>
+    <TouchableOpacity onPress={() => navigation.navigate('PatientDetails', { patient })}>
     </TouchableOpacity>
     <TouchableOpacity onPress={() => navigation.navigate('ModifyPatient', { patient })}>
       <MaterialIcons name="edit" size={24} color="black" />
@@ -27,8 +37,8 @@ const Item = ({ patient, navigation }) => (
     <TouchableOpacity onPress={() => removePatient(patient)}>
       <MaterialIcons name="delete" size={24} color="black" />
     </TouchableOpacity>
-  </View>
-);
+  </View>);
+};
 
 const Header = ({ searchQuery, setSearchQuery, navigation }) => (
   <View style={styles.header}>
