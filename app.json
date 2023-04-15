@@ -5,6 +5,14 @@
       "bundler": "metro"
     },
     "name": "cabmed-mobile",
-    "slug": "cabmed-mobile"
+    "slug": "cabmed-mobile",
+    "extra": {
+      "api" : "http://192.168.1.20:3000/"
+    },
+    "androidStatusBar": {
+      "backgroundColor": "#C2185B",
+      "translucent": false,
+      "hidden": false
+    }
   }
 }
