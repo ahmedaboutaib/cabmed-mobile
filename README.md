@@ -57,7 +57,7 @@ sudo apt install nodejs
 sudo apt install npm
 ```
 ```bash
-nano package.json
+
 ```
 - `sudo`: Permet d'exécuter la commande en tant qu'administrateur.
 - `apt install npm`: Installe npm, un gestionnaire de paquets pour Node.js.
@@ -111,3 +111,14 @@ sudo systemctl start nginx
 - `systemctl start nginx`: Démarre le service Nginx pour appliquer les nouvelles configurations.
 
 Ces commandes vous aideront à préparer votre serveur, à cloner le dépôt GitHub, à installer les dépendances Node.js, à configurer les variables d'environnement, à installer et configurer Nginx pour servir votre application React. N'oubliez pas de remplacer les valeurs spécifiques (comme les chemins de fichiers, les URL GitHub, etc.) par les vôtres.
+
+```bash
+npm run build
+
+```
+```bash
+
+```
+```bash
+
+```
