@@ -64,3 +64,8 @@ npx sequelize-cli db:migrate
 Ces commandes vous permettront de configurer une base de données PostgreSQL, de créer une base de données `cabmed`, un utilisateur `ahmed` avec les autorisations nécessaires, et d'exécuter les migrations de base de données pour votre application.
 
 N'oubliez pas de remplacer les valeurs spécifiques (comme les noms d'utilisateur, les mots de passe, les noms de base de données, etc.) par les vôtres selon votre configuration.
+
+
+```bash
+nano .env
+```
