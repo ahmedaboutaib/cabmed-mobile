@@ -56,6 +56,9 @@ sudo apt install nodejs
 ```bash
 sudo apt install npm
 ```
+```bash
+nano package.json
+```
 - `sudo`: Permet d'exécuter la commande en tant qu'administrateur.
 - `apt install npm`: Installe npm, un gestionnaire de paquets pour Node.js.
 
