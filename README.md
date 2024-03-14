@@ -102,6 +102,17 @@ sudo nano /etc/nginx/sites-available/react
 ```
 - `sudo`: Permet d'exécuter la commande en tant qu'administrateur.
 - `nano /etc/nginx/sites-available/react`: Ouvre le fichier de configuration Nginx pour le projet React.
+- server {
+    listen 80;
+    server_name  52.224.10.116;
+
+    root /home/mahdibough6/cabmed/client/dist;
+    index index.html;
+
+    location / {
+        try_files $uri /index.html;
+    }
+}
 
 ### 12. Démarrage du service Nginx
 ```bash
