@@ -128,7 +128,7 @@ npm run build
 
 ```
 ```bash
-
+http://34.123.87.230/
 ```
 ```bash
 
