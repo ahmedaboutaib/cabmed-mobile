@@ -69,3 +69,9 @@ N'oubliez pas de remplacer les valeurs spécifiques (comme les noms d'utilisateu
 ```bash
 nano .env
 ```
+
+
+
+```bash
+npm run watch
+```
